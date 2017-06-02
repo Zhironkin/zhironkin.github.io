@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+#buttom{
+  
+  background: rgba(0,0,0,0.4);
+  display: table;
+  border-radius: 20px;
+  margin: 250px auto;
+  text-align: center;
+  color: #1d1616;
+  transition: .2s color;
+}
+
+.but{
+  background-color: #F0F0EF;
+  display: table;
+  width: 140px;
+  height: 140px;
+  float: left;  
+  margin: 50px 50px 50px 50px;
+  background-color: #1d1616;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Noto Sans', sans-serif;
+  padding-top: 60px;
+  border-radius: 10px;
+  transition: .2s color;
+}
+
+.green:hover{
+  color: #23C74F;
+}
+.green-clicked{
+  background-color: #23C74F;
+  color: #F0F0EF;
+}
+.green-clicked:hover{
+  background-color: #F0F0EF;
+  color: #23C74F;
+}
+
+.blue:hover, .blue:hover h2{
+  color: #0E76EC;
+}
+.blue-clicked{
+  background-color: #0E76EC;
+  color: #F0F0EF;
+}
+.blue-clicked:hover{
+  background-color: #F0F0EF;
+  color: #0E76EC;
+}
+
+.orange:hover, .orange:hover h2{
+  color: #F9B32F;
+}
+.orange-clicked{
+  background-color: #F9B32F;
+  color: #F0F0EF;
+}
+.orange-clicked:hover{
+  background-color: #F0F0EF;
+  color: orange;
+}
+
+.red:hover, .red:hover h2{
+  color: #C72723; 
+}
+.red-clicked{
+  background-color: #C72723;
+  color: #F0F0EF;
+}
+.red-clicked:hover{
+  background-color: #F0F0EF;
+  color: #C72723;
+}

@@ -1,0 +1,118 @@
+#main{
+	display: table;
+	height: 300px;
+	margin: 0 auto;
+}
+
+#html{  /*Контейнер*/
+	transition:1s all;
+	
+	color:#fff;
+    background:#6b0c36;
+    background:rgba(0,0,0,0.3);
+	width:280px;
+	height:400px;
+	/*margin-left: 300px;*/
+	
+}
+#html>h2{  /*Заголовок*/
+	transition:1s all;
+	font-family: 'Anton', sans-serif;
+	font-size: 24px;
+	color:#404040;
+	background:#fff;	
+	margin: 50px 80px 20px;
+	text-align:center;
+	padding-top:50px;
+	width: 120px;
+	height: 120px;
+	border-radius:100px;
+}
+#html>p{
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	padding:20px;
+}
+#html:hover{
+	transform: scale(1.2);
+	background:rgba(0,0,0,0.5);
+}
+#html:hover h2{
+	transform: rotate(360deg) scale(1.2);
+	background-color:#EF4848;
+}
+
+#css{
+	transition:1s all;
+	color:#fff;
+    background:#6b0c36;
+    background:rgba(0,0,0,0.3);
+	width:280px;
+	height:425px;
+}
+#css>h2{
+	transition:1s all;
+	font-family: 'Anton', sans-serif;
+	font-size: 24px;
+	color:#404040;
+	background:#fff;	
+	margin: 45px 80px 5px;
+	text-align:center;
+	padding-top:50px;
+	width: 120px;
+	height: 120px;
+	border-radius:100px;
+}
+#css>p{
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	padding:20px;
+}
+#css:hover{
+	transform: scale(1.2);
+	background:rgba(0,0,0,0.5);
+}
+#css:hover h2{
+	transform: scale(1.2);
+	background-color:#009dff;
+}
+
+#javascript{
+	transition:1s all;
+	color:#fff;
+    background:#6b0c36;
+    background:rgba(0,0,0,0.3);
+	width:280px;
+	height:450px;
+}
+#javascript>h2{
+	transition:1s all;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	color:#404040;
+	background:#fff;	
+	margin: 45px 80px 5px;
+	text-align:center;
+	padding-top:50px;
+	width: 120px;
+	height: 120px;
+	border-radius:100px;
+}
+#javascript>p{
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	padding:20px;
+}
+#javascript:hover{
+	transform: scale(1.2);
+	background:rgba(0,0,0,0.5);
+}
+#javascript:hover h2{
+	transform: rotate(-360deg) scale(1.2);
+	background-color:#F1DC4E;
+}
+
+.div{
+	float:left;
+	margin:90px;
+}

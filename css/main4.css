@@ -1,0 +1,123 @@
+#nav{ /*Общая настройка главных заголовков*/
+	counter-reset: li; 
+	list-style: none; 
+	width:150px;
+	
+}
+
+.font-nav{
+	font-family: 'Anton', sans-serif;
+	color: #080808;
+}
+#nav>li{
+	position: relative;
+	display: block;
+	padding: 3px 0px 3px 25px;
+	margin: 2em 0;
+	background:#6b0c36;
+    background:rgba(0,0,0,0.3);
+	color: #444;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: .3s ease-out;
+	
+}
+
+#nav li li{
+	position: relative;
+	display:block;
+	background: #DAD2CA;
+	color: #444;
+	text-decoration: none;
+	border-radius: .3em;
+	margin:0 2em;
+	text-decoration:none;
+	padding: 3px 25px 3px 15px;
+	margin-bottom:-31px;
+	
+}
+
+#nav ul{
+	list-style:none;
+    position:absolute;
+    left:-150px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+    opacity:0; /* Устанавливаем начальное состояние прозрачности */
+	padding-left: 125px;
+	margin-top: -27px;
+	transition: .8s all;
+}
+
+#nav li a{
+	text-decoration:none;
+	color: #080808;
+}
+
+#nav ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    display:block;
+}
+
+#nav ul li a{
+	font-family: 'Oswald', sans-serif;
+}
+
+#nav ul li{
+	-webkit-transition: .1s ease-out;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition: .1s ease-out;
+    -moz-transition-delay: 0.1s;
+	transition: 0.7s all;
+	transition-delay: 0.6s;
+	
+}
+
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+    left:0; /* Приносим его обратно на экран, когда нужно */
+    opacity:1; /* Делаем непрозрачным */
+	
+}
+
+#nav li:hover ul li{ /* Выводим выпадающий пункт при наведении курсора */
+	margin-bottom:5px;
+	background:#AF4035;
+	
+}
+
+#nav>li:hover {
+	background: #E9E4E0;
+	
+}
+
+#nav li:hover ul li:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	
+
+}
+
+#nav ul li:hover a{
+	text-decoration:underline;
+}
+
+#nav>li:hover:before {
+	transform: rotate(360deg);
+}
+
+#nav>li:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	/*background: #8FD4C1;*/
+	background:#AF4035;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	/*border: .3em solid white;*/
+	margin-left: 7px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .4s ease-out;
+}
+

@@ -1,0 +1,108 @@
+*{
+	box-sizing: border-box;
+}
+body{
+  height: 800px;
+}
+#header{
+  position: absolute;
+  
+}
+.main{
+	display: table;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 20px 25px 20px;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 5px 25px black;
+	transition: .2s all;
+}
+.main-color>div{
+	display: table;
+	float: left;
+	padding: 10px;
+	border-radius: 50%;
+	margin: 0 25px 10px 0;
+	transition: .2s all;
+}
+.main-color>div:hover{
+	transform: scale(1.2);
+}
+.one{
+	background-color: rgba(0,0,0,0.1);
+}
+.two{
+	background-color: rgba(0,0,0,0.4);
+}
+.three{
+	background-color: rgba(0,0,0,0.7);
+}
+.main-text{
+  position: absolute;
+  font-family: 'Cookie', cursive;
+  font-size: 2.4em;
+  margin-top: -17px;
+  left: 45%;
+  text-shadow: 0 0 20px #ccc;
+  transition: .1s all linear;
+}
+.main:hover .main-text{
+  color: #FFC242;
+  text-shadow: 0 0 10px black;
+}
+
+.gallery-box{
+  width: 600px;
+  padding: 25px 0 0;
+  margin: 0 auto;
+}
+.view{
+  position: relative;
+  margin: 0 0 5px;
+}
+.big-image img{
+  display: block;
+  width: 600px;
+  height: 300px;
+}
+.prev, .next{
+  position: absolute;  
+  width: 40px;
+  height: 40px;
+  transition: .2s all linear;
+
+}
+.prev{
+  top: 150px;
+  left: 20px;
+  background: url(../image/left.png) no-repeat;
+  background-size: 70%;
+  transform-origin: 100% 50;
+}
+.next{
+  top: 150px;
+  right: 10px;
+  background: url(../image/right.png) no-repeat;
+  background-size: 70%;
+  transform-origin: -50 100%;
+}
+.prev:hover, .next:hover{
+	transform: scale(1.2);
+}
+ 
+.thumbnails{
+  width:605px;
+}
+.thumbnails a{
+  float:left;
+  margin:0 5px 0 0;
+}
+.thumbnails a img{
+  width:142px;
+  height:80px;
+  border: 2px solid transparent;
+  display:block;
+}
+.thumbnails .active img{
+  border-color:#069;
+}

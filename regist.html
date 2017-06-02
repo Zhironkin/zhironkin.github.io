@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/regist-style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Oswald|Ranga|Roboto" rel="stylesheet">
+		<title>Регистрация</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/qulpfile.js"></script>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="header">
+				<h1><b>Регистрация</b></h1>
+			</div>
+			<div method="post" action="" class="form">
+				<div class="div-form">
+					<p class="p-input">ФИО*:
+					<input required type="text" name="name" class="name"/></p>
+
+					<p class="p-input">Пароль*:
+					<input required type="password" name="password" class="pas"/></p>
+
+					<p data-tip="Пароли не совпадают" class="p-input">Повторите Пароль*:
+					<input required type="password" data-tip="Пароли не совпадают" name="repassword" class="repas"/><span id="repas">Пароли не совпадают</span></p>
+
+					<p class="p-input">Почта*:
+					<input required type="email" name="mail" class="mail"/></p>
+
+					<span>
+					<input type="submit" class="but" value="Зарегестрироваться"></span>	
+				</div>
+			</div> 
+		</div>
+		
+	</body>
+</html>

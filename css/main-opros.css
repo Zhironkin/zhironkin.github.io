@@ -1,0 +1,99 @@
+:root {
+  --footer-color: #1EBE71;
+  
+}
+
+.input-text, .imput-color, .input-radio, .input-checkbox, .input-textarea{
+	padding: 15px;
+	margin: 25px;
+	transition: .5s all;
+}
+
+.input-radio label, .input-checkbox{
+	font-family: 'Lato', sans-serif;
+}
+.input-radio label input, .input-checkbox input{
+	margin-top: 5px;
+}
+
+.input-text input{
+	transition: .5s all;
+	margin-bottom: 15px;
+	border-width: 1px;
+	border-style: solid; /*стиль поля для ввода*/
+	border-color: #e1e1e1;
+	border-radius: 4px;
+	margin-bottom: -5px;
+	padding: 2px 50px 2px 5px;
+	box-shadow: none;
+	font-size: 115%
+}
+
+.input-text input:hover{
+	border-color: #009dff;
+}
+
+#div-opros{
+	position: relative;
+	display: table;
+	background: rgba(0,0,0,0.45);
+	margin: 0 auto;
+	padding: 20px 10%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#getdown{
+	margin: 0 auto;
+	
+	font-size: 2em;
+	text-align: center;
+	text-shadow: rgba(0,0,0,1) 0 3px 10px;
+}
+#getdown:hover{
+	/*color: #1EBE71;*/
+	text-shadow: #F4C430 0 5px 15px;
+}
+.geta{
+	color: #F4C430;
+	text-decoration: none;
+}
+
+.input-textarea input{
+	padding: 2px 25px;
+	margin-right: 10px;
+	border-radius: 4px;
+	border-width: 0px;
+	background-color: #009dff;
+	box-shadow: none;
+	font-size: 100%;
+	border-style: solid;
+	font-family: 'Roboto Condensed', sans-serif;
+	transition: .20s all ease-in-out;
+}
+
+.imput-color input{
+	opacity: 0;
+}
+
+.imput-color:hover, .input-radio:hover, .input-checkbox:hover{
+	transform: scale(1.2);
+	transform-origin: 25% 25%;
+}
+
+.input-textarea input:hover{
+	transform: scale(1.1);
+}
+
+.imput-color footer {
+  width: 75px;
+  height: 75px;
+  transition: .5s all;
+  border-radius: 100%;
+  float: right;
+  margin-top: -25px; /*По вертикали*/
+  margin-right: 75px; /*по горизотнали*/
+  background-color: var(--footer-color);
+}
+
+.imput-color footer:hover{
+	transform: scale(1.5);
+}

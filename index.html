@@ -1,9 +1,202 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1>Hello my first page</h1>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/galleria.css">
+		<link rel="stylesheet" type="text/css" href="css/main-style.css">
+		<link rel="stylesheet" type="text/css" href="css/button-color.css">
+		<link rel="stylesheet" type="text/css" href="css/enter.css">
+		<link rel="stylesheet" type="text/css" href="css/main-about.css">		
+		<link rel="stylesheet" type="text/css" href="css/main-opros.css">
+		<link rel="stylesheet" type="text/css" href="css/main-cont.css">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Roboto+Condensed|Vollkorn" rel="stylesheet">
+		<title>BigAuction</title>
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="js/scroolly.demo.min.js"></script>
+		<script type="text/javascript" src="js/jquery.scroolly.js"></script>
+		<script type="text/javascript" src="js/button-color.js"></script>
+		<script type="text/javascript" src="js/scrolly.js"></script>
+		<script type="text/javascript" src="js/enter.js"></script>
+		<script type="text/javascript" src="js/photo.js"></script>
+
+	</head>
+	<body>
+
+		
+
+		<div class="inner">
+			<div id="header">
+				<div class="icon">
+					<h2>LogName</h2>
+					<p>subheading</p>
+				</div> 
+				<div class="head">
+					<label><a href=""></a><div class="to-top"><b>Home</b></div></label>
+					<label><a href=""></a><div class="to-phot"><b>Gallery</b></div></label>
+					<label><a href=""></a><div class="to-about"><b>About</b></div></label>
+					<label><a href=""></a><div class="to-inter"><b>interview</b></div></label>
+				</div>
+				<div class="getform">
+					<label class="enter"><a href=""></a>Вход </label>
+					<span> | </span>
+					<a href="regist.html"> Регистрация</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+			<input id="toggle" type="checkbox">
+			<!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+
+			<!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+			<label class="toggle-container" for="toggle">
+				<!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+				<span class="button button-toggle"></span>
+			</label>
+
+			<!-- Навигация -->
+			<nav class="nav">
+				<a rel="nofollow" rel="noreferrer" class="nav-item" href="2.menu-2rd.html">Version1</a>
+				<a rel="nofollow" rel="noreferrer" class="nav-item" href="3.menu-3rd.html">Version2</a>
+				<a rel="nofollow" rel="noreferrer" class="nav-item" href="4.menu-4.html">Version3</a>
+				<a rel="nofollow" rel="noreferrer" class="nav-item" href="">Version4</a>
+			</nav>
+		</div>
+
+		<div class="form">
+		    <div id="login-form">
+		        <h1>Авторизация на сайте <span class="exit"><a ><img src="http://lubovny-privorot.ru/media/image/krestik.png" width="25"></a></span></h1>
+
+		        <fieldset>
+		            <form action="" method="get">
+		                <input type="email" required value="Почта" onBlur="if(this.value=='')this.value='Почта'" onFocus="if(this.value=='Почта')this.value='' ">
+		                <input type="password" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' ">
+		                <input type="submit" value="ВОЙТИ">
+		                <footer class="clearfix">
+		                    <p><span class="info">?</span><a href="#">Забыли пароль?</a></p>
+		                </footer>
+		            </form>
+		        </fieldset>
+		    </div>
+		</div>
+
+		<div id="content">
+			<h2>Click for your like color!</h2>
+			<div id="buttom">
+				<div class="but green"><label><b>GREEN</b></label></div>
+				<div class="but blue"><label><b>BLUE</b></label></div>
+				<div class="but orange"><label><b>ORANGE</b></label></div>
+				<div class="but red"><label><b>RED</b></label></div>
+			</div>
+		</div>
+
+		<div class="content2">
+		<h2>Gallery</h2>
+			<div class="getColor">
+				<div class="div_light"><p class="p1">Set color</p></div>
+				<div class="div_gray"><p class="p2">Set color</p></div>
+				<div class="div_dark"><p class="p3">Set color</p></div>
+			</div>
+
+			<div class="main">	
+			<div class="inner-main">
+				<span class="main-color">
+					<div class="one"></div>
+					<div class="two"></div>
+					<div class="three"></div>
+				</span>
+				<span class="main-text">Photo Gallery</span>
+
+				<div class="gallery-box">
+				    <div class="view">
+				        <div class="big-image"><img src="image/2.jpg" alt="image11"></div>
+				        <a href="#" class="prev"></a>
+				        <a href="#" class="next"></a>
+				    </div>
+				 
+				    <div class="thumbnails">
+				        <a href="image/2.jpg" class="active"><img src="image/2.jpg" alt="image11"></a>
+				        <a href="image/1.jpg.jpg"><img src="image/1.jpg" alt="image12"></a>
+				        <a href="image/3.jpg"><img src="image/3.jpg" alt="image13"></a>
+				        <a href="image/4.jpg"><img src="image/4.jpg" alt="image14"></a>
+				        <a href="image/5.jpg"><img src="image/5.jpg" alt="image15"></a>
+				        <a href="image/6.jpg"><img src="image/6.jpg" alt="image16"></a>
+				    </div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="content3">
+		<h2>About</h2>
+			<div id="main">
+				<div id="html" class="div">
+					<h2>HTML</h2>
+					<p><b>HTML</b> (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке <b>HTML</b> (или XHTML).</p>
+				</div>
+				<div id="css" class="div">
+					<h2>CSS</h2>
+					<p><b>CSS3</b> (от англ. Cascading Style Sheets 3 — каскадные таблицы стилей третьего поколения) — активно разрабатываемая спецификация <b>CSS</b>. Представляет собой формальный язык, реализованный с помощью языка разметки. Самая масштабная редакция по сравнению с CSS1, CSS2 и CSS2.1.</p>
+				</div>
+				<div id="javascript" class="div">
+					<h2>JavaScript</h2>
+					<p><b>JavaScript</b> — прототипно-ориентированный сценарный язык программирования. <b>JavaScript</b> обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="content4">
+		<h2>interview</h2>
+			<div id="div-opros">
+			<div id="getdown"><label>Let's go!</label></div>
+			<form class="form-opros" name="opros" method="get" action="">
+				
+				<div class="input-text">
+					<p><b>Name:</b></br>
+					<input required type="text" name="fname" placeholder="enter your name"/></p></br>
+		   			<p><b>Sername:</b></br>
+		   			<input required type="text" name="sname" placeholder="enter your sername"/></p></br>
+		   		</div>
+
+		  		<div class="imput-color">
+			   		<label><b>Choose your favorite color:</b>
+					<input id="inp-color" type="color" value="#1EBE71">
+					<footer></footer></label>
+				</div>
+
+		   		<div class="input-radio">
+		   			<p><b>Which browser do you think is more optimized?</b></br>
+		   			<div class="radio">
+		   			<label><input type="radio" name="browser" value="firefox"> Firefox</label><Br>
+			   		<label><input type="radio" name="browser" value="opera"> Opera</label><Br>
+			   		<label><input type="radio" name="browser" value="google"> Google</label><Br>
+			   		<label><input type="radio" name="browser" value="edge"> Microsoft Edge</label><Br>
+			   		<label><input type="radio" name="browser" value="safari"> Safari</label>
+			   		</div></p>
+			   	</div>
+		  		
+		  		<div class="input-checkbox">
+		   			<p><b>What are the most important qualities?</b>
+					<div class="checkbox">
+					<input type="checkbox" id="check1"><label for="check1"> Kindness</label><Br>
+					<input type="checkbox" id="check2"><label for="check2"> Charm</label><Br>
+					<input type="checkbox" id="check3"><label for="check3"> Appearance</label><Br>
+					<input type="checkbox" id="check4"><label for="check4"> Punctuality</label>
+					</div></p>
+		   		</div>
+
+		  		<div class="input-textarea">
+		  			<p><b>Comments:</b></br>
+			   		<textarea name="comment" cols="60" rows="5" maxlength="100"></textarea></p>
+			  		<input type="submit" value="Send">
+			   		<input type="reset" value="Clear">
+		   		</div>
+		   		
+		   	</form>
+		 	</div>
+		</div>
+
+	</body>
 </html>

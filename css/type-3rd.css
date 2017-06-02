@@ -1,0 +1,171 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(http://elitefon.ru/pic/201211/1920x1200/elitefon.ru-12931.jpg);
+}
+
+#nav{
+	background-color: #26BFF2;
+	height: 50px;
+	margin-top: 50px;
+	 /* Меняем оси шапки, делая её вертикальной. */
+	display: flex;
+    justify-content: center;
+    /* Выравнивание элементов шапки с начала (по левому краю). */
+    align-items: flex-start;     
+}
+
+.ul{
+	list-style:none;
+	margin-top: 0;
+	margin-left: 150px;
+	display: block;
+}
+.li>img{
+	float: left;
+	width: 20px;
+	margin-right: 5px;
+	margin-top: 1.5px;
+	transition: 0.1s all;
+	opacity: 0;
+}
+.li:hover img{
+	opacity: 1;
+	transform: rotate(-180deg);
+}
+.li{
+	position: relative;
+	float: left;
+	margin-top: 15px;
+	margin-right: -35px; 
+	/*background: rgba(0,0,0,0.3);*/
+    display: block;
+}
+
+.ul ul{
+	background-color: #26BFF2;
+	list-style: none;
+	margin-left: -5px;
+	margin-top: -9999px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	text-decoration: none;
+	transition: .3s linear opacity;
+	opacity: 0;
+}
+
+.li ul li{
+	margin-left: -5px;
+	padding-right: 32px;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+.li ul li a:hover{
+	text-decoration: underline;
+	-webkit-transform: scale(1.1);
+}
+
+.li a{
+	text-decoration:none;
+	font-family: 'Lobster', cursive;
+	font-size: 1.2em;
+	color: white;
+	transform-origin: left;
+}
+.li ul li a{
+	display: block;
+	font-family: 'Lobster', cursive;
+	font-size: 1em;
+}
+
+.li:hover ul{
+	margin-top: 10px;
+	opacity: 1;
+}
+.li:hover>a{
+	color: #888888;
+}
+
+
+#find input {
+	width: 500px;
+	height: 25px;
+
+}
+#find input[name="q"] {
+	padding-right: 1.8em;
+	margin-left: 550px;
+	margin-top: 12px;
+	font-size: 1.1em;
+	border: none;
+	border-radius: 2px;
+}
+#find input[type="image"] {
+	left: -2.5em;
+	top: -2px;
+	position: relative;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	transition: .5s all
+}
+#find input[type="image"]:hover{
+	transform: scale(1.1);
+}
+
+#container{
+	width: 75%;
+	margin: 65px auto;
+}
+.content {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: stretch; /* Can be changed in the live sample */
+ 
+}
+
+.content > div {
+  width: 370px;
+  height: 550px;
+  margin: 50px;
+  opacity: .85;
+  transition: .5s ease;
+}
+.content > div:hover{
+	transform: scale(1.05);
+	opacity: 1;
+	box-shadow: 0 0 30px white;
+}
+#item1 {
+  background-color: #8cffa0;
+  min-height: 50px;
+  
+}
+
+#item2 {
+  background-color: #a0c8ff;
+  min-height: 50px;
+}
+
+#item3 {
+  background-color: #ffa08c;
+  min-height: 50px;
+}
+
+#item4 {
+  background-color: #ffff8c;
+  min-height: 50px;
+}
+
+#item5 {
+  background-color: #ff8cff;
+  min-height: 50px;
+}
+
+#item6 {
+  background-color: #8cffff;
+  min-height: 50px;
+}
+
