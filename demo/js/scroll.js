@@ -1,0 +1,9 @@
+jQuery('document').ready(function(){
+       $(window).on("load",function(){
+            $("body").mCustomScrollbar({
+					scrollButtons:{enable:true},
+					theme:"light-thick",
+					scrollbarPosition:"outside"
+				});
+        });
+})
