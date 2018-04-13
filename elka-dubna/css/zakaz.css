@@ -1,0 +1,107 @@
+.div-zakaz, .div-checked {
+	background: rgba(255,255,255,0.9);
+    position: relative;
+    width: 450px;
+    min-width: 350px;
+    height: 300px;
+    text-align: center;
+}
+.inner-div-zakaz {
+	display: table;
+    margin: 0 auto;
+}
+.inner-div-zakaz > h2 {
+    line-height: 3;
+    margin-top: 10px;
+    font-size: 1.8em;
+    font-family: 'Marck Script', cursive;
+}
+.input-radio {
+    text-align: left;
+    margin: 10px 0px;
+}
+.input-radio > p {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 5px 0px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.radio {
+	font-family: 'Marck Script', cursive;
+    font-size: 1.5em;
+} 
+.radio input {
+    margin-right: -5px;
+}
+.inner-div-zakaz > form {
+	display: table;
+    margin: 0 auto;
+}
+.inner-div-zakaz > form .tel {
+    height: 35px;
+    font-size: 1.2em;
+    padding: 0px 5px;
+    border: 1px solid rgba(154, 51, 52,0.3);
+}
+.inner-div-zakaz > form .tel:hover {
+	border: 1px solid rgba(52, 201, 36, 0.3);
+}
+.inner-div-zakaz > form button {
+    display: inline-block;
+    margin: 15px 0px;
+    float: right;
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    color: rgb(154, 51, 52);
+    border: 2px solid rgba(154, 51, 52,0.7);
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+.inner-div-zakaz > form button:hover {
+    border-color: #34C924;
+    box-shadow: 0 15px 20px rgba(52, 201, 36, 0.2);
+    color: #34C924;
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+}
+.inner-div-zakaz > a, .div-checked > a {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-transition: .1s color;
+    -moz-transition: .1s color;
+    -o-transition: .1s color;
+    transition: .1s color;
+}
+.inner-div-zakaz > a:hover, .div-checked > a:hover {
+	color: rgb(154, 51, 52);
+}
+
+.div-checked > div {
+    padding: 10px;
+}
+.div-checked > div > img {
+    width: 100px;
+}
+.div-checked > div > h3 {
+    padding: 10px;
+    font-size: 1.8em;
+    font-family: 'Marck Script', cursive;
+    font-weight: 300;
+}
+.div-checked > p {
+    padding: 20px 50px;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
