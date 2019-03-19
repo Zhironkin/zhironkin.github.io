@@ -64,26 +64,33 @@ a:hover {
   background: #222;
 }
 .background:nth-child(5) {
-  background: #5F594B;
+  /* background: #61A9BD; */
+  background: #79A0C1;
 }
 .background:nth-child(6) {
+  background: #5F594B;
+}
+.background:nth-child(7) {
   background: darkcyan;
 }
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  z-index: 5;
+  z-index: 6;
 }
 .background:nth-child(2) {
-  z-index: 4;
+  z-index: 5;
 }
 .background:nth-child(3) {
-  z-index: 3;
+  z-index: 4;
 }
 .background:nth-child(4) {
-  z-index: 2;
+  z-index: 3;
 }
 .background:nth-child(5) {
+  z-index: 2;
+}
+.background:nth-child(6) {
   z-index: 1;
 }
 
